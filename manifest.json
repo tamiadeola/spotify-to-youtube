@@ -3,15 +3,12 @@
   "name": "Spotify2Youtube",
   "version": "1.0",
   "description": "Converts embedded Spotify links to embedded Youtube links",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
   "permissions": [
-    "activeTab",
-    "contextMenus"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["Spotify2Youtube.js"]
-    }
+    "menus",
+    "activeTab"
   ]
-
 }
